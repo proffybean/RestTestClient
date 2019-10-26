@@ -48,7 +48,8 @@ namespace HttpClient.Controllers
                                 ? String.Empty 
                                 : $"?{QueryString}");
 
-            var response = await httpClient.PostAsync(requestUri, content);
+            HttpResponseMessage response = await httpClient.PostAsync(requestUri, content);
+            
 
             // Deserialize here and return the json or response code?
 

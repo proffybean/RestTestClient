@@ -46,7 +46,7 @@ namespace HttpClient.Tests.Encrypt
         {
             // Arrange
             var controller = new EnigmaController(
-                "http://localhost:61467/",
+                "https://enigmamachinerestapi.azurewebsites.net/",
                 "api/Enigma/Encrypt?leaveWhiteSpace=true",
                 String.Empty);
             string textToEncrypt = "I am a jelly doughnut";
